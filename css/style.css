@@ -568,7 +568,13 @@ button{
 	height: 193px;
     top: -36px;
     left: -16px;
-    background: linear-gradient(0.85deg, #062B31 -15.8%, rgba(6, 43, 49, 0) 99.03%), rgba(0, 181, 255, 0.2);
+}
+.news-card__img::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(1.04deg, #062B31 -15.8%, rgba(6, 43, 49, 0) 99.03%), rgba(0, 181, 255, 0.2);
 }
 .news-card__date{
 	display: block;
@@ -719,7 +725,7 @@ button{
 }
 .footer-menu__img_tel{
 	background: url('../img/icon1.png') no-repeat center;
-    background-position: 0px 1px;
+    background-position: 0px 0px;
 }
 .footer-menu__img_mail{
 	background: url('../img/icon2.png') no-repeat center;
@@ -927,7 +933,7 @@ button{
 
 /* Statistic    */ 
 .statistic{
-	background: url('../img/stat.png') no-repeat center;
+	background: url('../img/stat-background.png') no-repeat center;
 	padding: 130px 0 199px;
 	background-size: cover;
 }
@@ -1030,7 +1036,7 @@ button{
 	width: 141px;
 	height: 34px;
 	background: #26AFFF;
-	font-family: Proxima Nova;
+	font-family: ProximaNova;
 	font-size: 12px;
 	line-height: 150%;
 	text-align: center;
@@ -1075,7 +1081,7 @@ button{
 /*  Team  END */
 /*  Services   */
 .services{
-	padding: 150px 0;
+	padding: 150px 0 119px;;
 }
 .services .section-title{
 	text-align: left;
@@ -1124,8 +1130,9 @@ button{
 	line-height: 130%;
 	letter-spacing: 0.01em;
 	color: #000000;
-	margin-top: 37px;
+	margin-top: 39px;
 	margin-bottom: 15px;
+	height: 57px;
 }
 .service-card__price{
 	font-family: ProximaNova;
@@ -1142,10 +1149,264 @@ button{
 	letter-spacing: 0.01em;
 
 }
-.service-card:nth-child(1):after{
-
+.service-card-prac::after{
+	content: '';
+	width: 94px;
+	height: 94px;
+	background: url('../img/prac.png') no-repeat;
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+}
+.service-card-idea::after{
+	content: '';
+	width: 94px;
+	height: 94px;
+	background: url('../img/idea.png') no-repeat center;
+	position: absolute;
+	right: 14px;
+	bottom: 25px;
+}
+.service-card-tmt::after{
+	content: '';
+	width: 94px;
+	height: 94px;
+	background: url('../img/tmt.png') no-repeat;
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+}
+.service-card-internet::after{
+	content: '';
+	width: 94px;
+	height: 94px;
+	background: url('../img/internet.png') no-repeat;
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+}
+.service-card-business::after{
+	content: '';
+	width: 94px;
+	height: 94px;
+	background: url('../img/business.png') no-repeat;
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+}
+.service-card-target::after{
+	content: '';
+	width: 94px;
+	height: 94px;
+	background: url('../img/target.png') no-repeat;
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
 }
 /*  Servises END  */
+
+/* Contacts   */
+.contact{
+	background: url('../img/contact-map.png') no-repeat center;
+	padding: 150px 0;
+}
+.adress-card__title{
+	font-family: Bitter;
+	font-weight: 700;
+	font-size: 22px;
+	line-height: 150%;
+	letter-spacing: 0.05em;
+	color: #383838;
+	margin-bottom: 37px;
+}
+.adress-card{
+	height: 411px;
+	background: #fff;
+	padding: 28px 39px 28px 51px;
+	width: 372px;
+}
+.adress-card__list{
+	position: relative;
+}
+.adress-card__item a,.adress-card__text-content{
+	font-family: ProximaNova;
+	font-weight: 400;
+	font-size: 17px;
+	line-height: 150%;
+	letter-spacing: 0.01em;
+	color: #383838;
+	display: block;
+}
+.adress-card__item{
+	height: 52px;
+}
+.adress-card__text-content{
+	width: 212px;
+}
+.adress-card__item{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	margin-bottom: 18px;
+}
+.adress-card__img{
+	width: 38px;
+	height: 38px;
+	background: #26AFFF;
+	box-shadow: 0px 5px 20px rgba(0, 163, 255, 0.4);
+	border-radius: 50%;
+	position: relative;	
+    margin-right: 20px;
+}
+.adress::after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: url('../img/map-target.png') no-repeat center;
+	position: absolute;
+}
+.tel::after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: url('../img/phone-white.png') no-repeat center;
+	position: absolute;
+}
+.mail::after{
+	content: '';
+	width: 100%;
+	height: 100%;
+	background: url('../img/envelope-white.png') no-repeat center;
+	position: absolute;
+}
+.adress-card__item:nth-child(1) .adress-card__text-content{
+	margin-top: -6px;
+}
+.adress-card__item:nth-child(2) .adress-card__text-content{
+	margin-top: -3px;
+}
+.adress-card__item:nth-child(3) a{
+	margin-top: 5px;
+}
+.adress-card__list::after{
+	content: '';
+	position: absolute;
+	width: 270px;
+	height: 1px;
+	bottom: -15px;
+	background: #E5E5E5;
+}
+.adress-card__working-hours{
+	max-width: 248px;
+	width: 100%;
+	font-family: ProximaNova;
+	font-weight: 700;
+	font-size: 17px;
+	line-height: 150%;
+	letter-spacing: 0.01em;
+	color: #383838;
+	margin-top: 45px;
+}
+/*Contacts   END */
+
+/*Review */
+.reviews{
+	padding: 150px 0;
+}
+.reviews .container{
+	max-width: 1200px;
+}
+.reviews__content .section-title{
+	text-align: left;
+	letter-spacing: 0.03em;
+}
+.reviews__content{
+	margin-bottom: 20px;
+}
+.review-card{
+	padding: 40px;
+	box-shadow: 0px 5px 30px rgba(206, 218, 228, 0.6);
+	border-radius: 2px;
+	margin-top: 57px;
+	width: 96%;
+
+}
+.review-card__date{
+	display: block;
+	width: 75px;
+	height: 23px;
+	background: #26AFFF;
+	font-family: ProximaNova;
+	font-size: 10px;
+	line-height: 130%;
+	text-align: center;
+	letter-spacing: 0.01em;
+	color: #FFFFFF;
+	box-shadow: 0px 5px 20px rgba(0, 163, 255, 0.4);
+	border-radius: 2px;
+	padding-top: 5px;
+}
+.review-card__content{
+	margin-left: auto;
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	flex-direction: column;
+	-ms-align-items: flex-end;
+	align-items: flex-end;
+}
+.review-card__desc{
+	margin-right: 59px;
+}
+.review-card__name{
+	font-family: Bitter;
+	font-weight: 700;
+	font-size: 18px;
+	line-height: 125%;
+	letter-spacing: 0.04em;
+	color: #383838;
+	margin-bottom: 22px;
+}
+.review-card__text{
+	font-family: Proxima Nova;
+	font-weight: 400;
+	font-size: 15px;
+	line-height: 155%;
+	letter-spacing: 0.01em;
+	color: #858585;
+	max-width: 685px;
+	width: 100%;
+	padding-bottom: 20px;
+}
+.review-card__img img{
+	display: block;
+	width: 225px;
+    height: 231px;
+}
+.review-card__img{
+	position: relative;
+	width: 225px;
+    height: 231px;
+    margin-top: -11px;
+    margin-left: -81px;
+    margin-right: 40px;
+}
+.review-card__img::after{
+	content: '';
+	width: 36px;
+	height: 36px;
+	background: #fff url('../img/instagram-blue.png') no-repeat center;
+	position: absolute;
+    bottom: -15px;
+    right: 11px;
+	box-shadow: 0px 5px 20px rgba(0, 163, 255, 0.4);
+	border-radius: 3px;
+}
+/*Review  END*/
 
 /* Media Queries */
 
@@ -1167,6 +1428,9 @@ button{
 	}
 	.team-card{
 		margin-top: 40px;
+	}
+	.cases__slider {
+		margin-left: 0;
 	}
 }
 
@@ -1310,6 +1574,29 @@ button{
 	.team{
 		padding: 100px 0;
 	}
+	.services{
+		padding: 100px 0 70px;
+	}
+	.service-cards{
+		margin-top: 0;
+	}
+	.contact{
+		padding: 100px 0;
+	}
+	.adress-card{
+		padding-top: 0;
+	}
+	.review-card__img{
+		width: 168px;
+		height: 172px;
+	}
+	.review-card__img img{
+		width: 168px;
+		height: 172px;
+	}
+	.review-card__desc{
+		margin-right: 0;
+	}
 }
 
 /* 576 - 768 px */
@@ -1388,8 +1675,21 @@ button{
 	.news-card__title{
 		margin-top: 200px;
 	}
-
-
+	.contact{
+		background: #fff;
+	}
+	.map-img{
+		display: -webkit-flex;
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center;
+	}
+	.map-img img{
+		display: block;
+		width: 100%;
+	}
 }
 /* 414 - 576 px */
 @media screen and (max-width: 576px) {
@@ -1438,6 +1738,34 @@ button{
 	    margin-left: 0;
 	    max-width: 370px;
 	}
+	.service-card-prac::after, .service-card-idea::after, .service-card-internet::after, .service-card-tmt::after, .service-card-business::after, .service-card-target::after{
+		bottom: 25px;
+		right: 15px;
+	}
+	.adress-card{
+		width: 100%;
+		padding: 0;
+	}
+	.review-card {
+	    flex-direction: column;
+	    align-items: center;
+	    text-align: center;
+	}
+	.review-card__img{
+		margin: 0;
+	}
+	.review-card{
+		padding-top: 50px;
+		position: relative;
+	}
+	.review-card__date{
+		position: absolute;
+		top: 20px;
+		right: 15px;
+	}
+	.review-card__desc{
+		margin-top: 30px;
+	}
 }
 /* 320 - 414 px */
 @media screen and (max-width: 414px) {
@@ -1476,5 +1804,8 @@ button{
 	}
 	.choise__content{
 		margin-left: 0;
+	}
+	.service-card__btn{
+		width: 141px;
 	}
 }
