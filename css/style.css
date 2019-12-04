@@ -197,6 +197,7 @@ button{
 .call{
 	display: flex;
 	width: 220px;
+	margin-left: 35px;
 }
 .call__icon{
 	width: 45px;
@@ -229,7 +230,6 @@ button{
 	font-size: 17px;
 	line-height: 120%;
 	color: #26AFFF;
-	letter-spacing: 0.01em;
 }
 .offer{
 	margin-top: 110px;
@@ -289,8 +289,8 @@ button{
     width: 100%;
 }
 .help__content{
-    margin-top: 35px;
-    margin-right: 73px;
+    margin-top: 39px;
+    margin-right: 66px;
     text-align: right;
 }
 .help__desc{
@@ -300,11 +300,12 @@ button{
 	line-height: 143%;
     text-align: right;
     letter-spacing: 0.01em;
-    margin: 14px -9px 26px 0;
+    margin: 10px -5px 26px 0;
 }
 .help__btn{
-	margin-left: 38px;
-    margin-top: -92px;
+	margin-left: 54px;
+    margin-top: -88px;
+    letter-spacing: 0.01em;
 }
 .help-card{
 	max-width: 233px;
@@ -360,13 +361,12 @@ button{
 /* Cases   */
 .cases{
 	padding-bottom: 212px;
-}
-.cases .container{
-	max-width: 1200px;
+	padding-top: 6px;
 }
 .cases__title{
 	width: 170px;
     text-align: left;
+    margin-left: 10px;
 }
 .cases__desc{
 	font-family: ProximaNova;
@@ -374,15 +374,16 @@ button{
 	font-size: 17px;
 	line-height: 142%;
 	letter-spacing: 0.01em;
-    margin-left: 15px;
+    margin-left: 24px;
     margin-top: 11px;
 }
 .cases__slider{
 	box-shadow: 0px 5px 30px rgba(206, 218, 228, 0.6);
 	border-radius: 5px;
 	max-width: 468px;
-	margin-left: 14px;
-	margin-top: 28px;
+    margin-left: auto;
+    margin-top: 28px;
+    margin-right: -7px;
 }
 .cases__slide{
 	width: 156px;
@@ -487,13 +488,13 @@ button{
 	line-height: 140%;
 	text-align: right;
 	color: #FFFFFF;
-	letter-spacing: 0.02em;
+	letter-spacing: 0.023em;
 	margin-bottom: 34px;
 }
 .call-us__content{
 	flex-direction: column;
     margin-top: 84px;
-    margin-right: 12px;
+    margin-right: 8px;
     display: flex;
     align-items: flex-end;
     position: relative;
@@ -502,8 +503,8 @@ button{
 .call-us__content img{
 	position: absolute;
     display: block;
-    bottom: -202px;
-    left: 0;
+    bottom: -201px;
+    left: 22px;
 }
 .call-us__btn{
 	background: #fff;
@@ -516,7 +517,7 @@ button{
 	border: 1px solid #fff;
 }
 .call-us__pict{
-	margin-left: 54px;
+	margin-left: 56px;
     margin-top: -62px;
     max-width: 421px;
 }
@@ -532,8 +533,12 @@ button{
 	padding-top: 206px;
 	padding-bottom: 151px;
 }
+.news .section-title{
+	margin-right: -8px;
+}
 .news__buttons{
 	margin-top: 17px;
+	margin-left: 8px;
 }
 .news__button{
 	width: 50px;
@@ -647,9 +652,7 @@ button{
 	color: #CCCCCC;	
     padding-top: 56px;
 }
-.develop{
-	padding-left: 8px;
-}
+
 .social{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -675,7 +678,7 @@ button{
 	line-height: 150%;
     letter-spacing: 0.01em;
     margin-top: 38px;
-    margin-left: 9px;
+    margin-left: 7px;
 }
 .footer-menu {
 	height: 208px;
@@ -687,6 +690,7 @@ button{
 	flex-direction: column;
 	justify-content: space-between;
 	margin-top: 3px;
+	margin-left: 7px;
 }
 .footer-menu__title{
 	font-family: ProximaNova;
@@ -700,8 +704,8 @@ button{
 .footer-menu__item a,.footer-menu__item{
 	font-family: ProximaNova;
 	font-size: 15px;
-	line-height: 150%;
-	letter-spacing: 0.02em;
+	line-height: 155%;
+	letter-spacing: 0.01em;
 	color: #CCCCCC;
 }
 .footer-menu__item{
@@ -736,7 +740,7 @@ button{
     flex-direction: column;
 }
 .contacts{
-	margin-left: 5px;
+	margin-left: 6px;
 }
 .footer-menu__addres{
 	letter-spacing: 0.02em;
@@ -749,6 +753,8 @@ button{
 	letter-spacing: 0.01em;
 	color: #fff;
 	margin-bottom: 32px;
+	margin-left: 5px;
+    margin-top: 2px;
 }
 .dist__inp{
 	border: none;
@@ -764,7 +770,7 @@ button{
 }
 .dist-form{
 	margin-top: 3px;
-	margin-left: 14px;
+	margin-left: 7px;
 }
 .dist__btn:hover{
 	background: #383838;
@@ -788,15 +794,15 @@ button{
 	left: 0;
 	top: -21px;
 }
+.mobile{
+	display: none;
+}
 /* Footer     END*/
 
 /* Navigation     */
 .navigation{
 	background: #383838;
 	padding: 47px 0;
-}
-.navigation .container{
-	max-width: 1200px;
 }
 .navigation__title{
 	font-family: Bitter;
@@ -825,9 +831,6 @@ button{
 }
 /* Navigation   END*/
 /*  Choise   */
-.choise .container{
-	max-width: 1200px;
-}
 .choise{
 	padding: 150px 0;
 }
@@ -937,9 +940,6 @@ button{
 	padding: 130px 0 199px;
 	background-size: cover;
 }
-.statistic .container{
-	max-width: 1200px;
-}
 .circle__percent{
     width: 224px;
     height: 224px;
@@ -1006,9 +1006,6 @@ button{
 	margin-top: 83px;
 	margin-left: 25px;
 
-}
-.team-cards .container{
-	max-width: 1200px;
 }
 .team-card{
 	display: -webkit-flex;
@@ -1099,9 +1096,6 @@ button{
 }
 .service-cards{
 	margin-top: 86px;
-}
-.service-cards .container{
-	max-width: 1200px;
 }
 .service-card{
 	max-width: 370px;
@@ -1315,9 +1309,6 @@ button{
 .reviews{
 	padding: 150px 0;
 }
-.reviews .container{
-	max-width: 1200px;
-}
 .reviews__content .section-title{
 	text-align: left;
 	letter-spacing: 0.03em;
@@ -1436,6 +1427,9 @@ button{
 
 /* 768 - 992 px */
 @media screen and (max-width: 992px) {
+	.call{
+		margin-left: 0;
+	}
 	.offer{
 		margin-bottom: 346px;
 	}
@@ -1530,6 +1524,23 @@ button{
 	    position: absolute;
 	    bottom: 0;
 	    left: 9px;
+	}
+	.develop-text{
+		display: none;
+	}
+	.mobile{
+		display: block;
+		width: 100%;
+    	text-align: center;
+	}
+	.distribution-title {
+	    margin-top: 60px;
+	}
+	.footer-item .logo{
+		margin-bottom: 50px;
+	}
+	.rights-text{
+		margin-top: 42px;
 	}
 	.choise{
 		padding: 100px 0;
@@ -1675,6 +1686,9 @@ button{
 	.news-card__title{
 		margin-top: 200px;
 	}
+	.footer-menu.contacts{
+		margin-top: 50px;
+	}
 	.contact{
 		background: #fff;
 	}
@@ -1693,6 +1707,13 @@ button{
 }
 /* 414 - 576 px */
 @media screen and (max-width: 576px) {
+	.footer-item .logo{
+		margin-bottom: 0;
+	}
+	.social{
+		margin-top: 15px;
+		margin-bottom: 50px;
+	}
 	.case-card{
 		max-width: 280px;
 		margin-left: auto;
