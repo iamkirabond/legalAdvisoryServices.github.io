@@ -578,7 +578,7 @@ button{
     position: relative;
     margin-bottom: 114px;
 }
-.call-us__content img{
+.call-us .layer img{
 	position: absolute;
     display: block;
     bottom: -201px;
@@ -1482,7 +1482,7 @@ button{
 	width: 100%;
 	height: 100%;
 	background: rgba(0, 0, 0, 0.3);
-	position: absolute;
+	position: fixed;
 	top: 0;
 }
 .order-call__form{
@@ -1493,6 +1493,7 @@ button{
 	background: #fff;
 	margin: 100px auto 0;
 	padding: 82px 70px;
+	position: relative;
 }
 .order-call__title{	
 	font-family: Bitter;
@@ -1512,10 +1513,20 @@ button{
 	display: block;
 	font-family: Proxima Nova;
 	font-weight: 700;
-	font-size: 16px;
-	line-height: 130%;
+	line-height: 130%;	
+}
+.black-label{
 	color: #000000;
+	font-size: 16px;
+}
+.error{
+	color: #ff0000;
+	font-size: 14px;
+	margin-top: 2px;
+}
+.order-call__item{
 	margin-top: 20px;
+	height: 76px;
 }
 .order-call__input{
 	margin-top: 5px;
@@ -1533,6 +1544,19 @@ button{
 	width: 100%;
 	margin-top: 30px;
 }
+.order-call__close{
+	font-family: ProximaNova;
+    font-weight: 600;
+    font-size: 26px;
+    color: #858585;
+    position: absolute;
+    border: none;
+    background: none;
+    top: 10px;
+	right: 15px;
+	cursor: pointer;
+}
+
 /* Order Call END*/ 
 /* Media Queries */
 
@@ -1557,6 +1581,9 @@ button{
 	}
 	.cases__slider {
 		margin-left: 0;
+	}
+	.order-call__form{
+		margin-top: 25px;
 	}
 }
 
@@ -1921,6 +1948,11 @@ button{
 	}
 	.review-card__desc{
 		margin-top: 30px;
+	}
+	.order-call__form{
+		margin: 0;
+		max-height: 100%;
+		padding: 50px 20px;
 	}
 }
 /* 320 - 414 px */
