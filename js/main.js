@@ -15,7 +15,7 @@ $('.side-menu__btn').on('click', function(){
 $('.offer__btn, .help__btn, .call-us__btn').on('click',function(){
     $('.order-call').toggle();
 })
-$('.order-call__close').on('click',function(){
+$('.order-call__btn').on('click',function(){
     $('.order-call').hide();
 })
 /* ORDER CALL  END */
