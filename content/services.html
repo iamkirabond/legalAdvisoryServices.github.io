@@ -50,7 +50,7 @@
 						</nav>
 					</div>
 					<div class="d-none d-md-block col-md-4 col-lg-3">
-						<a href="tel:+74955672815" class="call">
+						<button class="call">
 							<div class="call__icon">
 								<img src="../img/phone.png" alt="phone">
 							</div> 	
@@ -58,7 +58,7 @@
 								<span>Заказать звонок</span>
 								+ 7 (495) 567-28-15
 							</div>
-						</a>
+						</button>
 					</div>
 					<div class="col-2 col-sm-1 d-lg-none">
 						<div class="burger">
@@ -356,8 +356,26 @@
 			</div>
 		</div>
 	</footer>
-	
-	<script src="js/jquery-3.4.1.min.js"></script>
-	<script src="js/main.js"></script>
+	<div class="order-call">
+		<form class="order-call__form" id="order-form">
+			<button class="order-call__close-btn">X</button>
+			<h2 class="order-call__title">Отправьте заявку</h2>
+			<p class="order-call__desc">
+				И наши специалисты свяжутся с вами ближайшее время для оказания профессиональной помощи!
+			</p>
+			<div class="order-call__item">
+				<label class="black-label" for="firstName">Имя</label>
+				<input class="order-call__input" id="firstName" type="text" name="firstName" required></input>
+			</div>
+			<div class="order-call__item">
+				<label class="black-label" for="tel">Телефон</label>
+				<input class="order-call__input" id="tel" type="tel" name="phoneNumber" required></input>
+			</div>
+			<button class="order-call__btn btn" type="submit">Отправить</button>
+		</form>
+	</div>
+	<script src="../js/jquery-3.4.1.min.js"></script>
+	<script src="../js/jquery.validate.js"></script>
+	<script src="../js/main.js"></script>
 </body>
 </html>

@@ -88,6 +88,8 @@ a {
 }
 button{
 	outline: none;
+	border: none;
+	background: none;
 }
 .btn{
 	display: block;
@@ -286,7 +288,7 @@ button{
 }
 .call__icon img{
 	margin-top: 14px;
-    margin-left: 15px;
+    margin-left: 4px;
 }
 .call__text{
 	display: -webkit-flex;
@@ -300,7 +302,7 @@ button{
 	font-size: 17px;
 	line-height: 140%;
 	color: #383838;
-	margin-left: 20px;
+	margin-left: 19px;
 }
 .call__text span{
 	font-family: ProximaNova;
@@ -362,9 +364,9 @@ button{
     position: absolute;
     height: 378px;
     top: 150px;
-    left: 0px;
-    background: linear-gradient(to right, #fff 32%, #F3F9FB 0%);
-    width: 100%;
+    right: 0px;
+    background: #F3F9FB;
+    width: 65%;
 }
 .help__content{
     margin-top: 39px;
@@ -581,13 +583,13 @@ button{
 .call-us .layer img{
 	position: absolute;
     display: block;
-    bottom: -201px;
+	bottom: -361px;
     left: 22px;
 }
 .call-us__btn{
 	background: #fff;
 	color: #26AFFF;
-	margin-left: 302px;
+	margin-left: auto;
 }
 .call-us__btn:hover{
 	background: #00b6ff;
@@ -609,14 +611,17 @@ button{
 /* News        */
 .news{
 	padding-top: 206px;
-	padding-bottom: 151px;
+	padding-bottom: 114px;
 }
-.news .section-title{
-	margin-right: -8px;
+.news-top{
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 122px;
 }
 .news__buttons{
 	margin-top: 17px;
 	margin-left: 8px;
+	display: flex;
 }
 .news__button{
 	width: 50px;
@@ -644,6 +649,7 @@ button{
 	position: relative;
 	box-shadow: 0px 5px 30px rgba(206, 218, 228, 0.6);
 	border-radius: 2px;
+	text-align: left;
 }
 .news-card__img{
 	position: absolute;
@@ -1279,8 +1285,12 @@ button{
 
 /* Contacts   */
 .contact{
-	background: url('../img/contact-map.png') no-repeat center;
 	padding: 150px 0;
+}
+.map-block{
+	height: 411px;
+	width: 100%;
+	
 }
 .adress-card__title{
 	font-family: Bitter;
@@ -1477,6 +1487,7 @@ button{
 }
 /*Review  END*/
 /* Order Call  */ 
+
 .order-call{
 	display: none;
 	width: 100%;
@@ -1558,17 +1569,42 @@ button{
 }
 
 /* Order Call END*/ 
+
+/* Swiper */
+.swiper-container {
+	width: 100%;
+	min-height: 658px;
+  }
+  .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+  }
+/* Swiper END */
 /* Media Queries */
 
 @media screen and (max-width: 1200px){
+	.logo{
+		margin-left: 0;
+	}
 	.menu__item a{
 		padding: 32px 6px;
 	}
 	.help__btn{
 	    margin-left: 0px;
-	}
-	.news-card__wrapper{
-		max-width: 370px;
 	}
 	.news-card__wrapper{
 		margin-right: 14px;
@@ -1584,6 +1620,24 @@ button{
 	}
 	.order-call__form{
 		margin-top: 25px;
+	}
+	.help{
+		padding: 100px 0 150px;
+	}
+	.cases {
+		padding-bottom: 150px;
+	}
+	.news {
+		padding: 150px 0 100px;
+	}
+	.help-card__rocket, .help-card__desktop, .help-card__brain {
+		background-position:  66px 35px;
+	}
+	.news {
+		padding: 100px 0 70px;
+	}
+	.reviews {
+		padding: 100px 0;
 	}
 }
 
@@ -1661,7 +1715,7 @@ button{
 		margin-right: 0;
 	}
 	.call-us__btn{
-		margin-left: 0;
+		margin: 0 auto;
 	}
 	.call-us{
 		position: relative;
@@ -1686,6 +1740,14 @@ button{
 	    position: absolute;
 	    bottom: 0;
 	    left: 9px;
+	}
+	.call-us .layer img {
+		display: none;
+	}
+	.call-us__text{
+		display: flex;
+		align-items: center;
+		flex-direction: column;
 	}
 	.develop-text{
 		display: none;
@@ -1812,8 +1874,8 @@ button{
 	.call-us__title{
 		font-size: 22px;
 	}
-	.news {
-		padding-bottom: 100px;
+	.news-top{
+		flex-direction: column-reverse;
 	}
 	.news-card__wrapper{
 		max-width: 354px;
@@ -1821,6 +1883,7 @@ button{
 	}
 	.news-card{
 		position: relative;
+		width: 100%;
 	}
 	.news-cards{
 		margin-top: 0;
@@ -1865,6 +1928,27 @@ button{
 	.map-img img{
 		display: block;
 		width: 100%;
+	}
+	.review-card {
+	    flex-direction: column;
+	    align-items: center;
+		text-align: center;
+		padding: 40px 10px;
+	}
+	.review-card__img{
+		margin: 0;
+	}
+	.review-card{
+		padding-top: 50px;
+		position: relative;
+	}
+	.review-card__date{
+		position: absolute;
+		top: 20px;
+		right: 15px;
+	}
+	.review-card__desc{
+		margin-top: 30px;
 	}
 }
 /* 414 - 576 px */
@@ -1928,26 +2012,6 @@ button{
 	.adress-card{
 		width: 100%;
 		padding: 0;
-	}
-	.review-card {
-	    flex-direction: column;
-	    align-items: center;
-	    text-align: center;
-	}
-	.review-card__img{
-		margin: 0;
-	}
-	.review-card{
-		padding-top: 50px;
-		position: relative;
-	}
-	.review-card__date{
-		position: absolute;
-		top: 20px;
-		right: 15px;
-	}
-	.review-card__desc{
-		margin-top: 30px;
 	}
 	.order-call__form{
 		margin: 0;
