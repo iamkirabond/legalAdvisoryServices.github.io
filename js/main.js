@@ -1,11 +1,18 @@
 /* HAMBURGER   */
 
 $('.burger').on('click',function(){
-    $('.side-menu').toggle();
+    $('.side-menu').addClass('d-flex');
+    $('html, body').css({
+        overflow: 'hidden',
+    });
 })
 
-$('.side-menu__btn').on('click', function(){
-    $('.side-menu').hide();
+$('.side-menu__btn, .side-menu__background, .side-menu__item').on('click', function(){
+    console.log('hide')
+    $('.side-menu').removeClass('d-flex');
+    $('html, body').css({
+        overflow: 'visible'
+    });
 })
 
 /* HAMBURGER END  */
@@ -69,44 +76,56 @@ $('#order-form').validate({
 
 /*  PARALLAX  */
 
-var scene = $('#scene').get(0);
-var parallaxInstance = new Parallax(scene);
+if ($("section").is(".call-us")){
+    var scene = $('#scene').get(0);
+    var parallaxInstance = new Parallax(scene);
+}
 
 /*  PARALLAX  END*/
 
 
 
 /* SLIDER  */
-var swiper = new Swiper('.swiper-container', {
-    slidesPerView: 1,
-    spaceBetween: 30,
-    pagination: {
-      el: '.swiper-pagination',
-      clickable: true,
-    },
-    navigation: {
-        nextEl: '.swiper-button-next-unique',
-        prevEl: '.swiper-button-prev-unique'
-    },
-    breakpoints: {
-        998: {
-            slidesPerView: 2
+if ($("section").is(".call-us")){
+    var swiper = new Swiper('.swiper-container', {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
         },
-        1200: {
-            slidesPerView: 3
+        navigation: {
+            nextEl: '.swiper-button-next-unique',
+            prevEl: '.swiper-button-prev-unique'
+        },
+        breakpoints: {
+            998: {
+                slidesPerView: 2
+            },
+            1200: {
+                slidesPerView: 3
+            }
         }
-    }
-  });
+    });
+}
 /* SLIDER END */
 
 
 /* Yandex Map */
-
+if ($("div").is("#map")){
 ymaps.ready(init);
-function init(){
-    var myMap = new ymaps.Map("map", {
-        center: [55.76, 37.64],
-        zoom: 12
-    });
+    function init(){
+        var myMap = new ymaps.Map("map", {
+            center:[55.80285820428499,37.5843422637293],
+            zoom: 18,
+            controls: ['zoomControl']
+        });
+        var myPlacemark = new ymaps.Placemark([55.802797775283615,37.583765468365584],{} , {
+            iconImageSize : [32, 40]
+        })
+
+       myMap.geoObjects.add(myPlacemark);
+
+    }
 }
 /* Yandex Map  END*/

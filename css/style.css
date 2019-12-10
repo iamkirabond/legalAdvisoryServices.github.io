@@ -201,10 +201,14 @@ button{
 	position: absolute;
 	width: 100vw;
 	height: 100vh;
-	background: rgba(0, 0, 0, 0.3);
 	top: 0;
 	left: 0;
 	z-index: 2;
+}
+.side-menu__background{
+	background: rgba(0, 0, 0, 0.3);
+	width: 100%;
+	height: 100%;
 }
 .side-menu__content{
 	background: #FFFFFF;
@@ -1286,11 +1290,11 @@ button{
 /* Contacts   */
 .contact{
 	padding: 150px 0;
+	position: relative;
 }
 .map-block{
 	height: 411px;
-	width: 100%;
-	
+	width: 100%;	
 }
 .adress-card__title{
 	font-family: Bitter;
@@ -1306,6 +1310,8 @@ button{
 	background: #fff;
 	padding: 28px 39px 28px 51px;
 	width: 372px;
+	position: absolute;
+	right: 300px;
 }
 .adress-card__list{
 	position: relative;
@@ -1486,15 +1492,17 @@ button{
 	border-radius: 3px;
 }
 /*Review  END*/
+
+
 /* Order Call  */ 
 
 .order-call{
 	display: none;
 	width: 100%;
 	height: 100%;
-	background: rgba(0, 0, 0, 0.3);
 	position: fixed;
 	top: 0;
+	background: rgba(0, 0, 0, 0.3);
 }
 .order-call__form{
 	max-width: 600px;
@@ -1638,6 +1646,9 @@ button{
 	}
 	.reviews {
 		padding: 100px 0;
+	}
+	.adress-card{
+		right: 100px;
 	}
 }
 
@@ -1832,6 +1843,9 @@ button{
 	.review-card__desc{
 		margin-right: 0;
 	}
+	.adress-card{
+		right: 50px;
+	}
 }
 
 /* 576 - 768 px */
@@ -1917,18 +1931,6 @@ button{
 	.contact{
 		background: #fff;
 	}
-	.map-img{
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		justify-content: center;
-	}
-	.map-img img{
-		display: block;
-		width: 100%;
-	}
 	.review-card {
 	    flex-direction: column;
 	    align-items: center;
@@ -1949,6 +1951,21 @@ button{
 	}
 	.review-card__desc{
 		margin-top: 30px;
+	}
+	.adress-card{
+		position: relative;
+		top: 0;
+		left: 15px;
+	}
+	.map-block{
+		margin-top: 50px;
+		width:100%;
+		height: 100%;
+	}
+	.contact .container-fluid .row{
+		display: flex;
+		flex-direction: column-reverse;
+		width: 100%;
 	}
 }
 /* 414 - 576 px */

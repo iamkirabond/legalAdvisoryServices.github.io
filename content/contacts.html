@@ -10,13 +10,14 @@
 	<link rel="stylesheet" href="../css/bootstrap-grid.min.css">
 	<!-- Main CSS -->
 	<link rel="stylesheet" href="../css/style.css">
-
+	
 	<meta name="description" content="#">
 	<meta name="keywords" content="#">
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Контакты</title>
-	
+	<!-- Yandex Map -->
+	<script src="https://api-maps.yandex.ru/2.1/?apikey=810d93cc-fc04-42e3-8524-4ced1aac4243&lang=ru_RU" type="text/javascript"></script>
 </head>
 <body>
 	<header class="header" id="header">
@@ -69,6 +70,7 @@
 				</div>
 			</div>
 			<div class="side-menu">
+				<div class="side-menu__background"></div>
 				<div class="side-menu__content">
 					<div class="side-menu__top">
 						<a href="#!" class="logo">
@@ -96,7 +98,7 @@
 							</li>
 						</ul>
 					</nav>
-					<a href="tel:+74955672815" class="call">
+					<button class="call">
 						<div class="call__icon">
 							<img src="../img/phone.png" alt="phone">
 						</div> 	
@@ -104,7 +106,7 @@
 							<span>Заказать звонок</span>
 							+ 7 (495) 567-28-15
 						</div>
-					</a>
+					</button>
 				</div>
 			</div>
 		</div>
@@ -126,51 +128,38 @@
 	</header>
 	<section class="contact" id="contact">
 		<div class="container-fluid">
-			<div class="map-block" id="map"></div>
-		</div>
-		<div class="container">
-			<div class="row justify-content-end">
-				<div class="col-12 col-md-6 col-lg-4 pr-lg-0">
-					<div class="adress-card">
-						<h3 class="adress-card__title">
-							Как нас найти
-						</h3>
-						<ul class="adress-card__list">
-							<li class="adress-card__item">
-								<div class="adress-card__img adress"></div>
-								<p class="adress-card__text-content">г. Москва, ул. Бутырская, 62 Z-Plaza, 5-й этаж</p>
-							</li>
-							<li class="adress-card__item">
-								<div class="adress-card__img tel"></div>
-								<div class="adress-card__text-content">
-									<a href="tel:+749571811">
-										+ 7 (495) 577-18-11
-									</a>
-									<a href="tel:+749572815">
-										+ 7 (495) 567-28-15
-									</a>
-								</div>
-							</li>
-							<li class="adress-card__item">
-								<div class="adress-card__img mail"></div>
-								<a href="mailto:JClegal@gmail.com">
-									JClegal@gmail.com
-								</a>
-							</li>
-						</ul>
-						<p class="adress-card__working-hours">
-							Мы работаем с 9:00 до 22:00 в рабочие дни
-						</p>
-					</div>
-				</div>
-			</div>
-		</div>
-		<div class="container">
 			<div class="row">
-				<div class="col-12 p-0 d-block d-md-none justify-content-center">
-					<div class="map-img">
-						<img src="../img/map-target-small.png" alt="map">
-					</div>
+				<div class="col-12 map-block" id="map"></div>
+				<div class="col-12 col-md-6 col-lg-4 pr-lg-0 adress-card">	
+					<h3 class="adress-card__title">
+						Как нас найти
+					</h3>
+					<ul class="adress-card__list">
+						<li class="adress-card__item">
+							<div class="adress-card__img adress"></div>
+							<p class="adress-card__text-content">г. Москва, ул. Бутырская, 62 Z-Plaza, 5-й этаж</p>
+						</li>
+						<li class="adress-card__item">
+							<div class="adress-card__img tel"></div>
+							<div class="adress-card__text-content">
+								<a href="tel:+749571811">
+									+ 7 (495) 577-18-11
+								</a>
+								<a href="tel:+749572815">
+									+ 7 (495) 567-28-15
+								</a>
+							</div>
+						</li>
+						<li class="adress-card__item">
+							<div class="adress-card__img mail"></div>
+							<a href="mailto:JClegal@gmail.com">
+								JClegal@gmail.com
+							</a>
+						</li>
+					</ul>
+					<p class="adress-card__working-hours">
+						Мы работаем с 9:00 до 22:00 в рабочие дни
+					</p>
 				</div>
 			</div>
 		</div>
@@ -302,10 +291,8 @@
 			<button class="order-call__btn btn" type="submit">Отправить</button>
 		</form>
 	</div>
-	<!-- Yandex Map -->
-	<script src="https://api-maps.yandex.ru/2.1/?apikey=810d93cc-fc04-42e3-8524-4ced1aac4243&lang=ru_RU" type="text/javascript"></script>
 	<script src="../js/jquery-3.4.1.min.js"></script>
-	<script src="../js/jquery.validate.js"></script>
+	<script src="../js/jquery.validate.min.js"></script>
 	<script src="../js/main.js"></script>
 </body>
 </html>
