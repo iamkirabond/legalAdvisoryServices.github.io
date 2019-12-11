@@ -8,7 +8,6 @@ $('.burger').on('click',function(){
 })
 
 $('.side-menu__btn, .side-menu__background, .side-menu__item').on('click', function(){
-    console.log('hide')
     $('.side-menu').removeClass('d-flex');
     $('html, body').css({
         overflow: 'visible'
@@ -19,7 +18,7 @@ $('.side-menu__btn, .side-menu__background, .side-menu__item').on('click', funct
 
 
 /* ORDER CALL   */
-$('.offer__btn, .help__btn, .call-us__btn, .call').on('click',function(){
+$('.offer__btn, .help__btn, .call-us__btn, .call__icon').on('click',function(){
     event.preventDefault();
     $('.order-call').toggle();
     $('html, body').css({
@@ -113,7 +112,7 @@ if ($("section").is(".call-us")){
 
 /* Yandex Map */
 if ($("div").is("#map")){
-ymaps.ready(init);
+    ymaps.ready(init);
     function init(){
         var myMap = new ymaps.Map("map", {
             center:[55.80285820428499,37.5843422637293],
@@ -125,7 +124,6 @@ ymaps.ready(init);
         })
 
        myMap.geoObjects.add(myPlacemark);
-
     }
 }
 /* Yandex Map  END*/

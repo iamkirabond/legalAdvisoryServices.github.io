@@ -109,6 +109,7 @@ button{
 	padding: 14px 0;
 	border: 1px solid transparent;
 	transition: 0.5s ease;
+	cursor: pointer;
 }
 .btn:hover{
 	color: #21c2fe;
@@ -291,8 +292,9 @@ button{
 	box-shadow: 0px 5px 20px rgba(0, 163, 255, 0.4);
 }
 .call__icon img{
-	margin-top: 14px;
-    margin-left: 4px;
+	margin-top: 3px;
+	margin-left: 3px;
+	cursor: pointer;
 }
 .call__text{
 	display: -webkit-flex;
@@ -305,8 +307,14 @@ button{
 	font-weight: 500;
 	font-size: 17px;
 	line-height: 140%;
-	color: #383838;
 	margin-left: 19px;
+}
+.call__text a{
+	color: #383838;
+	font-family: ProximaNova;
+	font-weight: 500;
+	font-size: 17px;
+	display: block;
 }
 .call__text span{
 	font-family: ProximaNova;
@@ -811,16 +819,16 @@ button{
 }
 .footer-menu__img_addres{
 	height: 100%;
-	background: url('../img/addres.png') no-repeat center;
+	background: url('../img/addres.svg') no-repeat center;
 	background-position: 0 2px;
 	margin-right: 13px;
 }
 .footer-menu__img_tel{
-	background: url('../img/icon1.png') no-repeat center;
+	background: url('../img/icon1.svg') no-repeat center;
     background-position: 0px 0px;
 }
 .footer-menu__img_mail{
-	background: url('../img/icon2.png') no-repeat center;
+	background: url('../img/icon2.svg') no-repeat center;
 	background-position: 0px 1px;
 }
 .footer-menu__contacts{
@@ -1235,7 +1243,7 @@ button{
 	content: '';
 	width: 94px;
 	height: 94px;
-	background: url('../img/prac.png') no-repeat;
+	background: url('../img/pract.svg') no-repeat;
 	position: absolute;
 	right: 25px;
 	bottom: 25px;
@@ -1244,7 +1252,7 @@ button{
 	content: '';
 	width: 94px;
 	height: 94px;
-	background: url('../img/idea.png') no-repeat center;
+	background: url('../img/idea.svg') no-repeat center;
 	position: absolute;
 	right: 14px;
 	bottom: 25px;
@@ -1253,7 +1261,7 @@ button{
 	content: '';
 	width: 94px;
 	height: 94px;
-	background: url('../img/tmt.png') no-repeat;
+	background: url('../img/tmt.svg') no-repeat;
 	position: absolute;
 	right: 25px;
 	bottom: 25px;
@@ -1262,7 +1270,7 @@ button{
 	content: '';
 	width: 94px;
 	height: 94px;
-	background: url('../img/internet.png') no-repeat;
+	background: url('../img/internet.svg') no-repeat;
 	position: absolute;
 	right: 25px;
 	bottom: 25px;
@@ -1271,7 +1279,7 @@ button{
 	content: '';
 	width: 94px;
 	height: 94px;
-	background: url('../img/business.png') no-repeat;
+	background: url('../img/business.svg') no-repeat;
 	position: absolute;
 	right: 25px;
 	bottom: 25px;
@@ -1280,7 +1288,7 @@ button{
 	content: '';
 	width: 94px;
 	height: 94px;
-	background: url('../img/target.png') no-repeat;
+	background: url('../img/target.svg') no-repeat;
 	position: absolute;
 	right: 25px;
 	bottom: 25px;
@@ -1959,13 +1967,12 @@ button{
 	}
 	.map-block{
 		margin-top: 50px;
-		width:100%;
+		width: 100%;
 		height: 100%;
 	}
 	.contact .container-fluid .row{
 		display: flex;
 		flex-direction: column-reverse;
-		width: 100%;
 	}
 }
 /* 414 - 576 px */
