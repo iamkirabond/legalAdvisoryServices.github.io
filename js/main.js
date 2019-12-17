@@ -44,13 +44,12 @@ $('#order-form').validate({
         },
         phoneNumber : {
             digits : true,
-            minlength: 10,
-            maxlength : 11
+            minlength: 11,
         }
     },
     messages: {
         firstName : 'Введите Ваше имя правильно',
-        phoneNumber : 'Введите Ваш номер'
+        phoneNumber : 'Номер должен состоять минимум из 11 символов'
     },
     submitHandler: function(form) {
         form.submit();
