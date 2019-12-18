@@ -84,7 +84,8 @@ a, a:hover, a:active {
 }
 a {
     text-decoration: none;
-    transition: all 0.5s ease;
+	transition: all 0.5s ease;
+	cursor: pointer;
 }
 button{
 	outline: none;
@@ -648,9 +649,7 @@ button{
 	margin-right: 25px;
 	cursor: pointer;
 }
-.news__button img{
-	margin-top: 20px;
-}
+
 .news__button:hover{
 	box-shadow: 0px 5px 20px rgba(0, 163, 255, 0.4);
 }
@@ -1739,6 +1738,7 @@ button{
 	}
 	.call-us__btn{
 		margin: 0 auto;
+		z-index: 2;
 	}
 	.call-us{
 		position: relative;
@@ -1966,8 +1966,8 @@ button{
 	}
 	.adress-card{
 		position: relative;
-		top: 0;
-		left: 15px;
+		right: 0;
+		margin-left: 15px;
 	}
 	.map-block{
 		margin-top: 50px;
@@ -2038,13 +2038,16 @@ button{
 		right: 15px;
 	}
 	.adress-card{
-		width: 100%;
+		width: 94%;
 		padding: 0;
 	}
 	.order-call__form{
 		margin: 0;
 		max-height: 100%;
 		padding: 50px 20px;
+	}
+	.swiper-container{
+		padding-bottom: 28px;
 	}
 }
 /* 320 - 414 px */
