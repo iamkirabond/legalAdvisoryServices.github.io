@@ -133,6 +133,28 @@ button{
 }
 /*   Спецификация END   */
 
+/* Preloader */
+#page-preloader {
+    position: fixed;
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    background: #fff;
+    z-index: 100500;
+}
+
+#page-preloader .spinner {
+    width: 64px;
+    height: 64px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    background: url('/img/spinner.svg') no-repeat 50% 50%;
+    margin: -16px 0 0 -16px;
+}
+/* Preloader END */
+
 
 /* Header   */
 .header{
@@ -194,7 +216,7 @@ button{
 	font-size: 16px;
 	line-height: 140%;
 	color: #383838;
-    padding: 32px 15px;
+    padding: 33px 15px;
     border-bottom: 2px solid transparent;
 }
 .menu__item a:hover, .menu__item a:active{
