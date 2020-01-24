@@ -542,9 +542,11 @@ button{
 	display: -ms-flex;
 	display: -o-flex;
 	display: flex;
-    margin: 60px 13px 0 17px;
-	background: linear-gradient(to right, #fff 14%, #F3F9FB 0%);
-	max-width: 570px;
+    justify-content: space-between;
+    margin: 60px 0 0;
+    background: linear-gradient(to right, #fff 14%, #F3F9FB 0%);
+    max-width: 570px;
+    padding: 0 0px 0 17px;
 }
 .case-card__title{
 	font-family: Bitter;
@@ -552,7 +554,7 @@ button{
 	font-size: 22px;
 	line-height: 120%;
 	letter-spacing: 0.01em;
-	width: 185px;
+	width: 177px;
 	margin-top: 56px;
 	margin-right: 15px;
 }
@@ -572,7 +574,7 @@ button{
 	letter-spacing: 0.02em;
 	color: #26AFFF;
     padding-top: 87%;
-    padding-left: 27px;
+    padding-left: 8px;
 }
 .case-card__overlay::after{
 	content: '';
@@ -1899,6 +1901,25 @@ button{
 	.help::before{
 		background: linear-gradient(to right, #fff 55%, #F3F9FB 0%);
 	}
+	.case-card__overlay{
+		padding-left: 27px;
+	}
+	.case-card{
+		max-width: 350px;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0;
+	}
+	.case-card__title{
+		position: absolute;
+		color: #fff;
+		z-index: 2;
+		display: none;
+		margin-left: 25px;
+	}
+	.case-card:hover .case-card__title{
+		display: block;
+	}
 	.cases__slider{
 		margin-left: 0;
 	}
@@ -2010,21 +2031,6 @@ button{
 	.social{
 		margin-top: 15px;
 		margin-bottom: 50px;
-	}
-	.case-card{
-		max-width: 280px;
-		margin-left: auto;
-    	margin-right: auto;
-	}
-	.case-card__title{
-		position: absolute;
-		color: #fff;
-		z-index: 2;
-		display: none;
-		margin-left: 25px;
-	}
-	.case-card:hover .case-card__title{
-		display: block;
 	}
 	.call-us__title{
 		font-size: 21px;
