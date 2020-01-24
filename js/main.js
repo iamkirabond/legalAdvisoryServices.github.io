@@ -1,3 +1,13 @@
+/* PRELOADER  */
+$(window).on('load', function () {
+    console.log('preloader')
+    var $preloader = $('#page-preloader'),
+        $spinner   = $preloader.find('.spinner');
+    $spinner.fadeOut();
+    $preloader.delay(350).fadeOut('slow');
+});
+/* PRELOADER END */
+
 /* HAMBURGER   */
 
 $('.burger').on('click',function(){
