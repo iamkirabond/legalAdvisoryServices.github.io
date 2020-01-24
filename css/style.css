@@ -151,7 +151,7 @@ button{
     left: 50%;
     top: 50%;
     background: url('../img/spinner.svg') no-repeat 50% 50%;
-    margin: -16px 0 0 -16px;
+    margin: -32px 0 0 -32px;
 }
 /* Preloader END */
 
