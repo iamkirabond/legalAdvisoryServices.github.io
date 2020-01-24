@@ -1,6 +1,5 @@
 /* PRELOADER  */
 $(window).on('load', function () {
-    console.log('preloader')
     var $preloader = $('#page-preloader'),
         $spinner   = $preloader.find('.spinner');
     $spinner.fadeOut();
